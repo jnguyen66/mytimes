@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
 }
-
+body, html{
+  height:100%;
+    padding:0;
+    margin:0;
+}
 header{
   position: fixed;
   z-index: 999;
@@ -34,7 +38,6 @@ div img{
   color:MediumAquamarine;
   align-content: center;
 }
-
 hr {
     display: block;
     height: 1px;
@@ -43,8 +46,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
-
 .box{
   margin-right:5px;
   width: 58px;
@@ -58,4 +59,145 @@ hr {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.mainContentContainer{
+  position:relative;
+  top: 90px;
+  width: 100%;
+  background-color: red;
+  display:inline-flex;
+  border-style: solid;
+  justify-content:center;
+}
+
+.firstColumn{
+  margin: 30px 20px;
+  border-style: solid;
+  display:inline-flex;
+  flex-direction: column;
+  width: 630px;
+  height: 1125px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.secondColumn{
+  margin: 30px 20px;
+  border-style: solid;
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  height: 925px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.thirdColumn{
+  margin: 30px 20px;
+  border-style: solid;
+  display:flex;
+  flex-direction: column;
+  width: 240px;
+  height: 600px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.thirdColumn img{
+  margin-left:auto;
+}
+p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.motherImage{
+  background-color: blue;
+  height: 300px;
+  background-size: 100% auto;
+  background-image: url('./resources/images/wine.png');
+  background-repeat: no-repeat;
+  display:flex;
+}
+.imageHeadlines.mainImage{
+  font-size: 40px;
+  text-align: left;
+}
+.imageHeadlines{
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.cookieImage{
+  background-color: blue;
+  height: 240px;
+  background-image: url('./resources/images/cookie.png');
+  background-repeat: no-repeat;
+}
+.girlImage{
+  background-color: blue;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-image: url('./resources/images/girl.png');
+  background-repeat: no-repeat;
+}
+.guyImage{
+  display: flex;
+  background-color: blue;
+  height: 300px;
+  background-image: url('./resources/images/guy.png');
+  background-repeat: repeat-x;
+}
+
+.catImage{
+  background-color: blue;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-image: url('./resources/images/cat.png');
+  background-repeat: repeat-x;
+}
+.earthColumn {
+  background-color: orange;
+  display: inline-flex;
+  width: 300px;
+  flex-direction: column;
+  height:550px;
+  justify-content: space-between;
+
+}
+.guyColumn {
+  background-color: blue;
+  display: inline-flex;
+  width: 300px;
+  flex-direction: column;
+  height:550px;
+  justify-content: space-between;
+}
+.doubleColumn{
+  display: inline-flex;
+  justify-content: space-between;
+}
+h3{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.bitesList{
+  align-content: flex-end;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 3;
+  background-color: WhiteSmoke;
+  justify-content: space-around;
+}
+
+.bitesList span{
+  margin-top: 5px;
+ margin-left: 20px;
+ font-family: Verdana;
+ font-size: 12px;
+ color: DimGray;
 }
