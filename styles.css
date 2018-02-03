@@ -50,7 +50,7 @@ hr {
   margin-right:5px;
   width: 58px;
 }
-.box a{
+a{
   color: black;
 }
 .navFlex{
@@ -65,15 +65,12 @@ hr {
   position:relative;
   top: 90px;
   width: 100%;
-  background-color: red;
   display:inline-flex;
-  border-style: solid;
   justify-content:center;
 }
 
 .firstColumn{
   margin: 30px 20px;
-  border-style: solid;
   display:inline-flex;
   flex-direction: column;
   width: 630px;
@@ -83,7 +80,6 @@ hr {
 }
 .secondColumn{
   margin: 30px 20px;
-  border-style: solid;
   display:flex;
   flex-direction: column;
   width: 300px;
@@ -93,7 +89,6 @@ hr {
 }
 .thirdColumn{
   margin: 30px 20px;
-  border-style: solid;
   display:flex;
   flex-direction: column;
   width: 240px;
@@ -110,7 +105,6 @@ p{
   color: black;
 }
 .motherImage{
-  background-color: blue;
   height: 300px;
   background-size: 100% auto;
   background-image: url('./resources/images/wine.png');
@@ -122,6 +116,7 @@ p{
   text-align: left;
 }
 .imageHeadlines{
+  margin:auto auto;
   font-family: Georgia;
   font-weight: bold;
   text-align: center;
@@ -129,13 +124,11 @@ p{
   color: white;
 }
 .cookieImage{
-  background-color: blue;
   height: 240px;
   background-image: url('./resources/images/cookie.png');
   background-repeat: no-repeat;
 }
 .girlImage{
-  background-color: blue;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -144,14 +137,12 @@ p{
 }
 .guyImage{
   display: flex;
-  background-color: blue;
   height: 300px;
   background-image: url('./resources/images/guy.png');
   background-repeat: repeat-x;
 }
 
 .catImage{
-  background-color: blue;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -159,7 +150,6 @@ p{
   background-repeat: repeat-x;
 }
 .earthColumn {
-  background-color: orange;
   display: inline-flex;
   width: 300px;
   flex-direction: column;
@@ -168,7 +158,6 @@ p{
 
 }
 .guyColumn {
-  background-color: blue;
   display: inline-flex;
   width: 300px;
   flex-direction: column;
@@ -183,10 +172,11 @@ h3{
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 41px;
 }
 .bitesList{
   align-content: flex-end;
-  height: 310px;
+  height: 275px;
   display: flex;
   flex-direction: column;
   flex-shrink: 3;
@@ -195,9 +185,50 @@ h3{
 }
 
 .bitesList span{
-  margin-top: 5px;
- margin-left: 20px;
- font-family: Verdana;
- font-size: 12px;
- color: DimGray;
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+.footerContainer{
+  margin-top: 100px;
+  position: relative;
+  background-color: MediumAquamarine;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  flex-direction: column;
+}
+.footerRow1{
+  width: 420px;
+  display:inline-flex;
+}
+.footerRow1 span{
+  padding: 0px 15px;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.footerNav{
+  display: flex;
+  margin:auto;
+
+}
+.footerNav span{
+  display:inline-flex;
+  padding: 0px 15px;
+  font-family: Verdana;
+  font-size: 12px;
+}
+.footerRow2{
+  display:flex;
+  padding: 20px;
+  font-family: Verdana;
+  font-size: 12px;
 }
